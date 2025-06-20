@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Icons/apple.png</file>
+        <file>Icons/reddit.png</file>
+        <file>Icons/twitter.png</file>
+        <file>Icons/visual-basic.png</file>
+    </qresource>
+</RCC>

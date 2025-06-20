@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new">
+        <file>Images/fuel.png</file>
+        <file>Images/temp.png</file>
+    </qresource>
+</RCC>

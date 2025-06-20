@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/apple.png</file>
+        <file>Images/reddit.png</file>
+        <file>Images/twitter.png</file>
+        <file>Images/visual-basic.png</file>
+        <file>Images/DesignImg.jfif</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,12 @@
+build/
+*/build/
+*.user
+*.exe
+*.moc
+*.qmltypes
+*.o
+*.obj
+*.ninja*
+*.autosave
+CMakeFiles/
+CMakeCache.txt
