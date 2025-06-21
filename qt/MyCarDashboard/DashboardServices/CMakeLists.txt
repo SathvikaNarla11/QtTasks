@@ -11,10 +11,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
-add_library(DashboardServices STATIC
-  dashboardservices.cpp
-  dashboardservices.h
+# add_library(DashboardServices STATIC
+#   dashboardservices.cpp
+#   dashboardservices.h
+# )
+
+qt_add_library(DashboardServices STATIC
+    dashboardservices.cpp
+    dashboardservices.h
 )
+
 
 target_link_libraries(DashboardServices PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 

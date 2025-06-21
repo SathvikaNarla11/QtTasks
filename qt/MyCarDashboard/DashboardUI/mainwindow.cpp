@@ -9,6 +9,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    DashboardServices *service = new DashboardServices(this);
+
     // Create the CustomDial and insert it into the speedometerwidget
     CustomDial* speedometer = new CustomDial(this);
     speedometer->setGaugeType(CustomDial::GaugeType::Speedometer);
@@ -35,6 +37,18 @@ MainWindow::MainWindow(QWidget *parent)
     CustomDial *tempGauge = new CustomDial(this);
     tempGauge->setGaugeType(CustomDial::GaugeType::Temp);
     ui->engTempwidgetVL->addWidget(tempGauge);
+
+
+    connect(service, &DashboardServices::dataUpdated, this, [=](int speed, int rpm, int fuel, int temp){
+
+        qDebug()<<"speed "<<speed;
+
+
+        speedometer->setValue(speed);
+        tachometer->setValue(rpm);
+        fuelGauge->setValue(fuel);
+        tempGauge->setValue(temp);
+    });
 
 
 }

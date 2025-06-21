@@ -246,9 +246,6 @@ void CustomDial::drawFuelTicksAndLabels(QPainter& painter, const QPoint& center,
     painter.drawText(QRectF(rightPos.x() - 10, rightPos.y() - 10, 20, 20), Qt::AlignCenter, rightLabel);
 }
 
-
-
-
 void CustomDial::drawNeedle(QPainter& painter, const QPoint& center, int innerRadius) {
     int range = m_max - m_min;
     double valueAngle = m_startAngle - ((m_value - m_min) / float(range)) * m_spanAngle;
